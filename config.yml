@@ -1,0 +1,14 @@
+baseURL: https://blog.natadesu.my.id/
+languageCode: en-us
+title: Blog Nata
+theme: "PaperMod"
+
+params:
+  homeInfoParams:
+    Title: Hello there!
+    Content: Welcome to my personal blog.
+  socialIcons:
+    - name: github
+      url: "https://github.com/Takane42"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/alif-naufal-ilyas-b177a1207/"
