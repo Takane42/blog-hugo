@@ -4,6 +4,7 @@ title: Blog Nata
 theme: "PaperMod"
 
 params:
+  ShowReadingTime: true
   homeInfoParams:
     Title: Hello there!
     Content: Welcome to my personal blog.
