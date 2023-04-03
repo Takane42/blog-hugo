@@ -32,6 +32,6 @@ jobs:
       with:
         context: ./
         push: true
-        tags: ghcr.io/takane42/blog-hugo
+        tags: ghcr.io/takane42/blog-hugo:latest
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
