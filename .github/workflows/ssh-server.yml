@@ -1,0 +1,25 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Update used Image on Server
+
+on:
+  workflow_run:
+    workflows: ["Create and publish a Docker image"]
+    branches: ["main"]
+    types:
+      - completed
+
+jobs:
+  update-image:
+    runs-on: ubuntu-latest
+    steps:
+    - name: SSH and Update Server
+      uses: appleboy/ssh-action@v0.1.8
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_KEY_PRIV }}
+        script: cd docker/blog && docker-compose pull && docker-compose up -d
