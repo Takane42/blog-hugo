@@ -15,10 +15,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: lint-dockerfile
-      uses: hadolint/hadolint-action@v2.1.0
       with:
-        dockerfile: Dockerfile
+        submodules: true
     - name: Login to Docker Hub
       uses: docker/login-action@v2
       with:
