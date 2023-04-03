@@ -4,6 +4,7 @@ title: Blog Nata
 theme: "PaperMod"
 
 params:
+  ShowCodeCopyButtons: true
   ShowReadingTime: true
   homeInfoParams:
     Title: Hello there!
