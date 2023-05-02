@@ -1,6 +1,6 @@
 ---
-title: "Intro Docker"
-date: 2023-04-03T10:27:10+07:00
+title: "Sinau Docker"
+date: 2023-04-04T10:27:10+07:00
 draft: false
 ---
 # Docker. Why?
